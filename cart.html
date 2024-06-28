@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website with AOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+    <div data-aos="fade-up">
+        <h1>Hello, World!</h1>
+    </div>
+
+    <p data-aos="zoom-in">
+        This paragraph will zoom in as you scroll down.
+    </p>
+
+    <img src="images/pasta.jpg" data-aos="zoom-in" alt="A cool image">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
+</body>
+</html>

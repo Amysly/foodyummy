@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/67603918f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/conctact.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href=index.html> <strong>CHEF'S CORNER</strong></a>
+            </div>
+            <ul>
+                <div class="men" id="wrapper">
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=aboutus.html>About Us</a></li>
+                    <li><a href=contact.html>Contact us</a></li>
+                    <li><a href=menu.html>Menu</a></li>
+                    <li><a href=faq.html>faq</a></li>
+                </div>
+                <div class="hamburger-card">
+                    <img class="hamburger-menu" src="images/hamburger-menu.svg" id="menu-toggle">
+                </div>
+            </ul>
+    
+        </nav>
+    </header>
+    <main>
+        <center>
+            <div class="map">
+                <iframe style="width: 70%;" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=madonna%20primary%20school%20gwagwalada%20phase%203%20abuja+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.versicherungen.at/tier-krankenversicherung/'>Krankenversicherung Haustier</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=cb8d1b01b8f9ae9ff4c2fd6be791e35ac0094509'></script>
+            </div>
+        </center>
+        <section class="contact-info"> 
+                <div class="contact-container">
+                    <div>
+                        <i class="fa-solid fa-location-dot icons-contact"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h2>Our Address</h2>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <div>
+                        <i class="fa-solid fa-location-dot icons-contact"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h2>Email Us</h2>
+                        <p>contact@example.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-info">
+                <div class="contact-container">
+                    <div>
+                        <i class="fa-solid fa-phone icons-contact"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h2>Call Us</h2>
+                        <p>+2347068622182</p>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <div>
+                        <i class="fa-solid fa-clock icons-contact"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h2>Opening Hours</h2>
+                        <p><strong>Mon-Sat</strong>: 11AM - 23PM;<strong>Sunday</strong> : Closed</p>
+                    </div>
+                </div>
+        </section>
+        <form class="form">
+                <input type="text" placeholder="Name" class="user">
+                <input type="email" placeholder="Email" class="email">
+                <input type="text" placeholder="Subject" class="subject">
+                <textarea placeholder="Send a Message" class="message"></textarea>
+                <div class="con-button">
+                    <button class="contact-button">Send Message</button>
+                </div>
+            
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-items">
+            <div>
+                <i class="fa-solid fa-location-dot icons-footer"></i>
+                <h2>Address</h2>
+            </div>
+             
+            <h4> New York, NY 535022 - US</h4>
+            <h4>A108 Adam Street</h4>
+        </div>
+
+        <div class="footer-items">
+            <div>
+                <i class="fa-solid fa-clock icons-footer"></i>
+                  <h2>Opening Hours</h2>
+            </div>
+                <h4><bold>Mon-Sat</bold> : 11AM - 23PM</h4>
+                <h4><bold>Sunday</bold>: Closed</h4>
+        </div>
+
+        <div class="footer-items">
+            <div>
+                <i class="fa-solid fa-phone icons-footer"></i>
+                <h2>Reservations</h5>
+            </div>
+            
+                <h4><bold>Phone</bold>: +1 5589 55488 55</h4>
+                <h4><bold>Email</bold>: info@example.com</h4>
+        </div>
+
+        <div class="footer-items">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <i class="fa-brands fa-linkedin social-icons"></i>
+                <i class="fa-brands fa-facebook social-icons"></i>
+                <i class="fa-brands fa-square-x-twitter social-icons"></i>
+                <i class="fa-brands fa-square-instagram social-icons"></i>
+              </div> 
+        </div>
+       
+        <div class="copyright">
+            <div class="border"></div>
+            <h4>© Copyright Yummy. All Rights Reserved</h4>
+        </div>
+       
+    </footer>
+    <button onclick="scrollToTop()" class="topbtn">
+        <i class="fa-sharp fa-solid fa-arrow-up button-arrow"></i>
+    </button>
+    <script type="module">
+        import { scrollToTop } from './js/index.js';
+
+        // Attach the function to the global window object
+        window.scrollToTop = scrollToTop;
+    </script>
+        <script type="module" src="/js/contact.js"></script>
+</body>
+</html>

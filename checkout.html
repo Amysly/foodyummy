@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>checkout page</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/67603918f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href=index.html> <strong>CHEF'S CORNER</strong></a>
+                </div>
+            <ul>
+                <div class="men" id="wrapper">
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=aboutus.html>About Us</a></li>
+                    <li><a href=contact.html>Contact us</a></li>
+                    <li><a href=menu.html>Menu</a></li>
+                    <li><a href=faq.html>faq</a></li>
+                </div>
+                <div class="hamburger-card">
+                    <img class="hamburger-menu" src="images/hamburger-menu.svg" id="menu-toggle">
+                </div>
+            </ul>
+        </nav>
+    </header>
+   <div class="div-modal">
+        <div class="checkout">
+        <div class="first-con">
+            <h1 class="review">Review and place order</h1>
+            <p style="font-weight: 600;">Review/Add address and fulfill payments to complete your purchase</p>
+            <div class="border-line"></div>
+            <div>
+                <h2>Recipient Information</h3>
+                <button class="add-reci" id="Recipient">Add Recipient</button>
+                <div class="border-line"></div>
+            </div>
+           
+            <div>
+                <h3>Delivery Address</h3>
+                <button class="btn-del" id="delivery-add">Add Delivery Address</button>
+                <div class="border-line"></div>
+            </div>
+            <button class="btn-order">Place Your Order</button>
+        </div>
+        <div class="second-con">
+            <h3>Your order from</h3>
+            <div class="border-line"></div>
+            <div>
+                <div class="price-item">
+                    <h3>Pizza</h3>
+                    <div><i class="fa-solid fa-trash-can"></i></div>
+                    <h3>N3500.0</h3>
+                </div>
+               
+                <div class="quantity-container">
+                    <button class="subtract-button">-</button>
+                    <button class="item-quantity">0</button>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="border-line"></div>
+            </div>
+
+            <div>
+                <div class="price-item">
+                    <h3>Pasta</h3>
+                  <div><i class="fa-solid fa-trash-can"></i></div>
+                    <h3>N3500.0</h3>
+
+                </div>
+                <div class="quantity-container">
+                    <button class="subtract-button" >-</button>
+                    <button class="item-quantity">0</button>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="border-line"></div>
+            </div>
+            <div>
+                <div class="item-summary">
+                    <h3>Items total:</h3>
+                    <h3>60995.0</h3>
+                </div>
+                <div class="item-summary">
+                    <h3>Discount:</h3>
+                    <h3>60995.0</h3>
+                </div>
+                <div class="item-summary">
+                    <h3>Delivery charge:</h3>
+                    <h3>60995.0</h3>
+                </div>
+                <div class="border-line"></div>
+            </div>
+            <div class="item-summary">
+                <h3>Total:</h3>
+                <h3>60995.0</h3>
+            </div>
+            
+
+        </div>
+     </div>
+     <center>
+        <form class="form-container">
+            <div style="margin-bottom: 20px; margin-top: 20px;">
+                <h1 style="font-weight: 600; font-family: sans-serif; font-size: 35px; display: inline; text-align: center;" >
+                    Update Recipient</h1>
+               <img src="images/closemenu.png" class="close-icon" width="30" style="margin-left: 100px;">
+            </div>
+            <label>Names</label><br>
+            <input type="text" placeholder="Names" id="fname"><br>
+            <label>Email</label><br>
+            <input type="email" placeholder="example@gmail.com" id="email"><br>
+            <label>Phone Number</label><br>
+            <input class="phone" placeholder="+234 08100023" id="phone"><br>
+            <button value="submit" class="submit-btn" id="submit">Submit</button>
+       </form>
+
+       <form class="form-two">
+        <div style="margin-bottom: 5px; margin-top: 5px;">
+            <h1 style="font-weight: 600; font-family: sans-serif; font-size: 35px; display: inline; 
+            text-align: center;" >
+                Add Address</h1>
+           <img src="images/closemenu.png" class="close-icon-two" width="30" style="margin-left: 100px;">
+        </div>
+        <label>Select State</label><br>
+        <select id="gender" name="states">
+            <option></option>
+            <option value="Abuja">Abuja</option>
+            <option value="Enugu">Enugu</option>
+            <option value="jos">Jos</option>
+            <option value="kano">Kano</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Benin">Benin</option>
+           </select><br><br>       
+        <label>Select City</label><br>
+        <select id="gender" name="states">
+            <option></option>
+            <option value="Abuja">Abuja</option>
+            <option value="Enugu">Enugu</option>
+            <option value="jos">Jos</option>
+            <option value="kano">Kano</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Benin">Benin</option>
+           </select><br><br>       
+        <label>House Number</label><br>
+        <input type="text"><br>
+        <label>Street</label><br>
+        <input type="text"><br>
+        <button value="submit" class="submit-btn">Use This Address</button>
+   </form>
+    
+       </center>
+   </div>
+
+
+ 
+   <footer class="footer">
+    <div class="footer-items">
+        <div>
+            <i class="fa-solid fa-location-dot icons-footer"></i>
+            <h2>Address</h2>
+        </div>
+         
+        <h4> New York, NY 535022 - US</h4>
+        <h4>A108 Adam Street</h4>
+    </div>
+
+    <div class="footer-items">
+        <div>
+            <i class="fa-solid fa-clock icons-footer"></i>
+              <h2>Opening Hours</h2>
+        </div>
+            <h4><bold>Mon-Sat</bold> : 11AM - 23PM</h4>
+            <h4><bold>Sunday</bold>: Closed</h4>
+    </div>
+
+    <div class="footer-items">
+        <div>
+            <i class="fa-solid fa-phone icons-footer"></i>
+            <h2>Reservations</h5>
+        </div>
+        
+            <h4><bold>Phone</bold>: +1 5589 55488 55</h4>
+            <h4><bold>Email</bold>: info@example.com</h4>
+    </div>
+
+    <div class="footer-items">
+        <h2>Follow Us</h2>
+        <div class="social-icons">
+            <i class="fa-brands fa-linkedin social-icons"></i>
+            <i class="fa-brands fa-facebook social-icons"></i>
+            <i class="fa-brands fa-square-x-twitter social-icons"></i>
+            <i class="fa-brands fa-square-instagram social-icons"></i>
+          </div> 
+    </div>
+   
+    <div class="copyright">
+        <div class="border"></div>
+        <h4>© Copyright Yummy. All Rights Reserved</h4>
+    </div>
+</footer>
+<script type="module" src="js/checkout.js"></script>
+<script type="module" src="js/cart.js"></script>
+</body>
+</html>

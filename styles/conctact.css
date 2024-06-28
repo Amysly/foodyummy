@@ -1,0 +1,156 @@
+.map{
+    margin-top: 130px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns:450px 450px;
+    grid-gap: 20px;
+    grid-column: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: stretch; 
+    align-items: center;
+    justify-content: center;
+    
+}
+@media (max-width: 1340px) {
+ .contact-info{
+    grid-template-columns:350px 350px;
+    align-items: stretch; 
+ }
+
+ .contact-container {
+    min-height: 100%;
+    line-height: 28px;
+}
+
+   
+}
+    
+
+@media (max-width: 680px) {
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+    .contact-details>p{
+  font-size: 13px;
+}
+    }
+
+
+.contact-container {
+    background-color: rgb(189, 185, 185);
+    width: 90%;
+    min-height: auto;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+}
+
+.icons-contact {
+    color: rgb(233, 74, 25);
+    margin-right: 13px;
+    font-size: 40px;
+}
+
+.contact-details > h2, p {
+    margin: 0;
+   
+}
+.contact-details>p{
+    font-size: 20px;
+}
+
+
+
+.form{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+"user user email email"
+"subject subject subject subject"
+"message message message message"
+"con-button con-button con-button con-button";
+ grid-gap:5px;
+ background-color: #ffff;
+ box-shadow: 0 0 10px  rgb(87, 84, 84); 
+ margin-top: 100px;
+ padding-left: 30px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+ padding-top: 20px;
+ width: 65%;
+margin: auto;
+margin-bottom: 40px;
+}
+
+
+@media (max-width: 680px) {
+.form {
+grid-template-columns: 1fr;
+grid-template-areas: 
+    "user"
+    "email"
+    "subject"
+    "message"
+    "con-button";
+    width: 90%; 
+} 
+.contact-button{
+     padding: 10px;
+    font-size: 14px; 
+}
+}
+
+
+.user{
+    grid-area: user;
+  padding: 10px;
+  border: 1px solid rgb(189, 185, 185);
+}
+
+.email{
+    grid-area: email;
+    padding: 10px;
+    border: 1px solid rgb(189, 185, 185);
+}
+
+.subject{
+    grid-area: subject;
+  padding: 10px;  
+  border: 1px solid rgb(189, 185, 185);
+}
+
+.message{
+    grid-area: message; 
+    padding: 30px;
+    border: 1px solid rgb(189, 185, 185);
+}
+
+input:focus{
+border-color: rgb(233, 74, 25);
+}
+
+input::placeholder{
+    font-family: poppins;
+    font-size: 17px;
+}
+
+.contact-button{
+    background-color: rgb(233, 74, 25);
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: poppins;
+}
+
+.con-button{
+    grid-area: con-button;
+    text-align: center;  
+}

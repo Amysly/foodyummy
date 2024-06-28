@@ -1,0 +1,30 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap:20px 50px;
+   justify-content: space-around;
+   margin-bottom: 40px;
+   margin-top: 125px;
+}
+
+.about-background-image{
+    width: 100%;
+    height: auto;
+}
+.text-block{
+    background-color: rgba(233, 74, 25);
+    padding: 20px;
+    max-width: 90%;
+    height: auto;
+}
+.ban{
+    text-align: center;
+    font-size: 40px;
+    font-family: italic;
+    margin: 0;
+}
+.sat{
+    font-style: italic;
+    font-size: 20px;
+    line-height: 30px;
+}
